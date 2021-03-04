@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lockdownhelp.app.MyRequests">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStart="0dp">
+        <ImageButton
+            android:id="@+id/imgBtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/form_back"
+            android:padding="20dp"
+            android:background="@null"></ImageButton>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/tYR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Requests"
+        android:textSize="16sp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"></TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_my_requests"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tYR"
+        android:layout_marginTop="10dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/colorLightBlue"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorName="BallPulseIndicator" />
+
+</RelativeLayout>

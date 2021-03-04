@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#155B8F</color>
+    <color name="colorPrimaryDark">#0E8D8D</color>
+    <color name="colorPrimaryLight">#549494</color>
+    <color name="colorAccent">#4DC100</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrey">#8E8787</color>
+    <color name="colorDisabled">#A4A4A4</color>
+    <color name="colorGreen">#00BE33</color>
+    <color name="colorRed">#F34747</color>
+    <color name="colorYellow">#ECE400</color>
+    <color name="colorLightBlue">#0098E6</color>
+    <color name="background">#dddddd</color>
+    <color name="colorAcceptButton">#12770E</color>
+    <color name="colorRejectButton">#9B0C0C</color>
+    <color name="colorOutOfStockButton">#401B1B</color>
+    <color name="colorUnservicableButton">#1A2CA4</color>
+    <color name="colorOutForDeliveryButton">#CF711F</color>
+
+</resources>

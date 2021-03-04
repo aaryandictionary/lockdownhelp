@@ -1,0 +1,196 @@
+{
+  "project_info": {
+    "project_number": "1091697446013",
+    "firebase_url": "https://lockdownapp-5c4b5.firebaseio.com",
+    "project_id": "lockdownapp-5c4b5",
+    "storage_bucket": "lockdownapp-5c4b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091697446013:android:7e46b40b8f7b6920253514",
+        "android_client_info": {
+          "package_name": "com.android.lockdownadminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091697446013-4m0dv2i719bu3oj07ebfet1vfdstrheh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.lockdownadminapp",
+            "certificate_hash": "c4d35bbe237d71a8af104c8b25073db86aa4acd6"
+          }
+        },
+        {
+          "client_id": "1091697446013-au42hog6rtal2j338ij01nqvml4jk9mt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEz9JvnlMOndt6QaJLnHXEDplf_dkhC-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091697446013-au42hog6rtal2j338ij01nqvml4jk9mt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091697446013:android:cd6769fb3e97ef94253514",
+        "android_client_info": {
+          "package_name": "com.android.lockdownapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091697446013-fimfnsurhuosop02pd4683v1l69jmqun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.lockdownapp",
+            "certificate_hash": "c4d35bbe237d71a8af104c8b25073db86aa4acd6"
+          }
+        },
+        {
+          "client_id": "1091697446013-au42hog6rtal2j338ij01nqvml4jk9mt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEz9JvnlMOndt6QaJLnHXEDplf_dkhC-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091697446013-au42hog6rtal2j338ij01nqvml4jk9mt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091697446013:android:a5547d05016017b3253514",
+        "android_client_info": {
+          "package_name": "com.android.lockdownsuperadminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091697446013-92gjm0uoe1n0ggjkh5b8jr0q9582o8bn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.lockdownsuperadminapp",
+            "certificate_hash": "c4d35bbe237d71a8af104c8b25073db86aa4acd6"
+          }
+        },
+        {
+          "client_id": "1091697446013-au42hog6rtal2j338ij01nqvml4jk9mt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEz9JvnlMOndt6QaJLnHXEDplf_dkhC-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091697446013-au42hog6rtal2j338ij01nqvml4jk9mt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091697446013:android:0c61c0af92a9432e253514",
+        "android_client_info": {
+          "package_name": "com.lockdown.lockdownapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091697446013-f940tg83hs56jhtohpe3b67qbh4vn2k2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lockdown.lockdownapp",
+            "certificate_hash": "c4d35bbe237d71a8af104c8b25073db86aa4acd6"
+          }
+        },
+        {
+          "client_id": "1091697446013-au42hog6rtal2j338ij01nqvml4jk9mt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEz9JvnlMOndt6QaJLnHXEDplf_dkhC-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091697446013-au42hog6rtal2j338ij01nqvml4jk9mt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091697446013:android:bdc7b5c754da93c4253514",
+        "android_client_info": {
+          "package_name": "com.lockdownhelp.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091697446013-hcc1p7pv06l6tv2fsf5v2p7t49unde6m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lockdownhelp.app",
+            "certificate_hash": "c4d35bbe237d71a8af104c8b25073db86aa4acd6"
+          }
+        },
+        {
+          "client_id": "1091697446013-au42hog6rtal2j338ij01nqvml4jk9mt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEz9JvnlMOndt6QaJLnHXEDplf_dkhC-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091697446013-au42hog6rtal2j338ij01nqvml4jk9mt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

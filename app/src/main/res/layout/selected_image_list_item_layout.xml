@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="10dp">
+        <RelativeLayout
+            android:id="@+id/relMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardImageSelected"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp">
+                <ImageView
+                    android:id="@+id/imgSelected"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"></ImageView>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/txtCategoryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vegetables"
+                android:textSize="16sp"
+                android:layout_toLeftOf="@id/imgBtnDelete"
+                android:layout_marginEnd="10dp"
+                android:ellipsize="middle"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/cardImageSelected"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="4dp"></TextView>
+            <TextView
+                android:id="@+id/txtSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.5 MB"
+                android:textColor="@color/colorDisabled"
+                android:layout_below="@id/txtCategoryName"
+                android:layout_marginStart="4dp"
+                android:layout_toRightOf="@id/cardImageSelected"
+                android:layout_marginTop="4dp"></TextView>
+
+            <ImageButton
+                android:id="@+id/imgBtnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:padding="20dp"
+                android:background="@null"
+                android:src="@drawable/img_cross"></ImageButton>
+        </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    tools:context="com.lockdownhelp.app.MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStart="0dp">
+    <RelativeLayout
+        android:id="@+id/relHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+        <RelativeLayout
+            android:id="@+id/relLocation"
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@id/relProfile"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgLocation"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/location_icon"></ImageView>
+            <TextView
+                android:id="@+id/txtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Knowledge Park, Greater Noida jdhdhdhddjjdjdh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/imgLocation"
+                android:layout_marginStart="8dp"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"></TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relProfile"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/profile_bg"
+            android:layout_alignParentEnd="true">
+            <TextView
+                android:id="@+id/txtNameInitials"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LD"
+                android:maxLength="2"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:textColor="@color/colorWhite"
+                android:layout_centerInParent="true"></TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@id/toolbar">
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/colorGrey"
+            android:layout_centerInParent="true"></TextView>
+    </RelativeLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/colorLightBlue"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorName="BallPulseIndicator" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/mainNestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@id/toolbar">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCurfewPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        app:cardCornerRadius="10dp"
+        android:elevation="8dp">
+    <RelativeLayout
+        android:id="@+id/relCurfewPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+        <TextView
+            android:id="@+id/txtCurfewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It's Urgent ?"
+            android:textStyle="bold"
+            android:textColor="@color/colorRed"></TextView>
+            <TextView
+                android:id="@+id/txtCurfewDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request a Curfew Pass"
+                android:layout_below="@id/txtCurfewTitle"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Aadhar Card details required)"
+                android:layout_below="@id/txtCurfewDesc"
+                android:layout_marginTop="10dp"></TextView>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgCurfewIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/curfew_pass_icon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"></ImageView>
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/relGoHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/rounder_border_white_bg"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/cardCurfewPass"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginTop="15dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/txtHomeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Want to go home ?"
+                android:textColor="@color/colorRed"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:id="@+id/txtHomeDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request Convenience Info"
+                android:layout_below="@id/txtHomeTitle"></TextView>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/imgHomeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/go_home_icon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"></ImageView>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tRYR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/request_requirements"
+        android:textSize="18sp"
+        android:layout_below="@id/relGoHome"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"></TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_requirements_category_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tRYR"
+        android:layout_marginStart="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:nestedScrollingEnabled="false"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="10dp"></androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
+</FrameLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

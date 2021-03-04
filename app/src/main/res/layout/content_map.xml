@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lockdownhelp.app.MapActivity"
+    tools:showIn="@layout/activity_map">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></fragment>
+
+    <com.skyfishjy.library.RippleBackground
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ripple_marker_bg"
+        app:rb_color="#0099CC"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_duration="3000"
+        app:rb_scale="6">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_gps"
+            android:translationY="-18dp"
+            android:layout_centerInParent="true"></ImageView>
+    </com.skyfishjy.library.RippleBackground>
+
+    <LinearLayout
+        android:id="@+id/linSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <fragment
+            android:id="@+id/places_search_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"></fragment>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Locate your Home"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/quantum_grey700"
+            android:textStyle="bold"></TextView>
+        <ImageButton
+            android:id="@+id/imgBtnMyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_location"
+            android:padding="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="4dp"
+            android:background="@null"></ImageButton>
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/tS"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="D-719, Galgotia University, Greater Noida, UP">
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtFlatNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundColor="@android:color/transparent"
+            android:background="@android:color/transparent"
+            app:boxStrokeColor="@color/colorDisabled"
+            android:layout_below="@id/txtAddress">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textFlatNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:textSize="12sp"
+                android:hint="Flat No. or House No.">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/btnSelectLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Location"
+        android:textColor="@color/white"
+        android:layout_below="@id/txtFlatNo"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"></Button>
+    </RelativeLayout>
+</RelativeLayout>

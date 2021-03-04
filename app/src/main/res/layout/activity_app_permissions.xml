@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lockdownhelp.app.AppPermissions">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        android:elevation="4dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App Permissions"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"></TextView>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/relDeviceLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+                <TextView
+                    android:id="@+id/tDL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Device Location"
+                    android:textSize="16sp"
+                    android:textStyle="bold"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="It is recommended to give location permission in order to use the app."
+                    android:layout_below="@id/tDL"
+                    android:textSize="14dp"
+                    android:layout_marginTop="4dp"></TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relCamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relDeviceLocation"
+                android:layout_margin="20dp">
+                <TextView
+                    android:id="@+id/tC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Camera &amp; External Storage"
+                    android:textSize="16sp"
+                    android:textStyle="bold"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Camera permission will allow you to upload required information while applying for a Curfew Pass"
+                    android:layout_below="@id/tC"
+                    android:textSize="14dp"
+                    android:layout_marginTop="4dp"></TextView>
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relTnC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relCamera"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="By clicking on I Agree you accept the Terms of Service and the Privacy Policy."
+                        android:textSize="14dp"
+                        android:layout_marginTop="4dp"></TextView>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/quantum_grey300"></View>
+        <Button
+            android:id="@+id/btnIAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/verify_button_bg"
+            android:text="I Agree"
+            android:textStyle="bold"
+            android:layout_below="@id/view1"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"
+            android:textAllCaps="false"
+            android:paddingHorizontal="40dp"
+            android:layout_centerInParent="true"></Button>
+    </RelativeLayout>
+</RelativeLayout>

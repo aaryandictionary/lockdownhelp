@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Number of Food Packets"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="16dp"></TextView>
+
+        <RelativeLayout
+            android:id="@+id/relContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle"
+            android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:id="@+id/relSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/choice_selector_bg">
+            <Spinner
+                android:id="@+id/spinner_type"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/Widget.AppCompat.Spinner.DropDown"
+                android:dropDownWidth="match_parent"
+                android:forceHasOverlappingRendering="false"
+                android:spinnerMode="dropdown"
+                ></Spinner></RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linSelector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Number of Packets"></TextView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/selector_bg">
+                <ImageButton
+                    android:id="@+id/imgBtnMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/minus"
+                    android:layout_weight="1"
+                    android:layout_marginStart="-4dp"
+
+                    android:background="@null"></ImageButton>
+                <TextView
+                    android:id="@+id/txtCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"></TextView>
+
+                <ImageButton
+                    android:id="@+id/imgBtnPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:layout_marginEnd="-4dp"
+                    android:src="@drawable/plus"></ImageButton>
+            </LinearLayout>
+        </LinearLayout>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="These food packets are meant only for the needy. Don't waste the food."
+            android:textSize="14sp"
+            android:layout_below="@id/relContainer"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="20dp"
+            android:textAlignment="center"></TextView>
+
+        <RelativeLayout
+            android:id="@+id/relMyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtMessage"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/txtMyLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Knowledge Park, Greater Noida"
+                android:ellipsize="end"
+                android:maxLength="36"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/my_location"
+                android:singleLine="true"
+                android:textSize="14sp"></TextView>
+
+            <TextView
+                android:id="@+id/txtChangeLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Location"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:textColor="@color/colorLightBlue"
+                android:layout_toRightOf="@id/txtMyLocation"
+                android:layout_marginStart="10dp"></TextView>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btnSendRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="40dp"
+            android:paddingStart="40dp"
+            android:background="@drawable/verify_button_bg"
+            android:text="Send Request"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/relMyLocation"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"></Button>
+    </RelativeLayout>
+
+</RelativeLayout>

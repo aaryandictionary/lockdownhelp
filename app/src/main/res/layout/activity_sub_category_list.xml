@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lockdownhelp.app.SubCategoryListActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStart="0dp">
+        <ImageButton
+            android:id="@+id/btnBackSubCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/form_back"
+            android:padding="20dp"
+            android:background="@null"></ImageButton>
+    </androidx.appcompat.widget.Toolbar>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/relFooter"
+    android:layout_below="@id/toolbar">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txtRequirementsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food &amp; Essentials"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/txtSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Vegetables"
+            android:textSize="16sp"
+            android:layout_below="@id/txtRequirementsTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_sub_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txtSelect"
+            android:layout_marginStart="10dp"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"></androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true">
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/quantum_grey300"></View>
+
+        <Button
+            android:id="@+id/btnSubmitRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Request"
+            android:textColor="@color/white"
+            android:background="@drawable/verify_button_bg"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"></Button>
+    </RelativeLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/colorLightBlue"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorName="BallPulseIndicator" />
+
+</RelativeLayout>
